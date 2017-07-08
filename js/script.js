@@ -10,7 +10,7 @@ var quoteRecycle = [];
 
 // Random Number Generator (number = max)
 function randomNumber(number) {
-  var rand = Math.floor(Math.random() * (number);
+  var rand = Math.floor(Math.random() * (number));
   return rand;
 }
 
