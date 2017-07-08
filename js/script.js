@@ -29,7 +29,7 @@ function getRandomQuote() {
 }
 
 // Random Color Picker - creates random color and assigns it to backgroundColor
-function randomColor() = {
+function randomColor() {
   var r = randomNumber(256);
   var g = randomNumber(256);
   var b = randomNumber(256);
