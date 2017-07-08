@@ -20,7 +20,7 @@ function getRandomQuote() {
   var pickQuote = quotes[quoteNumber];
   var recycle = quoteRecycle.push(pickQuote);
   quotes.splice(quoteNumber, 1);
-  console.log(pickQuote[quote]);
+  console.log(pickQuote['quote']);
   if (quotes.length === 0) {
     quotes = quoteRecycle;
     quoteRecycle = [];
@@ -38,16 +38,16 @@ function randomColor() {
 }
 
 // Quote Printer - gets a random quote and random color, sends to quote-box
-function printQuote = {
+function printQuote() {
   var shownQuote = getRandomQuote();
   var printHTML = '';
-  printHTML += '<p class = 'quote'>' + shownQuote[quote] + '</p>';
-  printHTML += '<p class = 'source'>' + shownQuote[source];
-  if (shownQuote[citation] != null) {
-    printHTML += '<span class='citation'>' + shownQuote[citation] + '</span>';
+  printHTML += '<p class = "quote">' + shownQuote['quote'] + '</p>';
+  printHTML += '<p class = "source">' + shownQuote['source'];
+  if (shownQuote['citation'] != null) {
+    printHTML += '<span class="citation">' + shownQuote['citation'] + '</span>';
   }
-  if (shownQuote[year] != null) {
-    printHTML += '<span class='year'>' + shownQuote[year] + '</span>';
+  if (shownQuote['year'] != null) {
+    printHTML += '<span class="year">' + shownQuote['year'] + '</span>';
   }
   printHTML += '</p>';
   document.getElementById('quote-box').innerHTML = printHTML;
