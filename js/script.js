@@ -59,7 +59,7 @@ function quoteRefresh() {
   var intervalID = window.setInterval(printQuote, 60000);
 }
 
-// Event listener to respond to "Show another quote" button clicks
+// Event listener - responds to "Show another quote" button clicks
 // When user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
